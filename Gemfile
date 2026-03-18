@@ -63,3 +63,18 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+  # pour les mails d'inscription etc
+group :development, :test do
+  gem "debug"
+  gem "rspec-rails"
+end
+
+group :development do
+  gem "letter_opener"
+  gem "web-console"
+end
+
+
+gem "dotenv-rails", "~> 3.2"
+
+gem "devise", "~> 5.0"
