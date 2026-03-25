@@ -13,7 +13,11 @@
 
         <p class="text-gray-400 text-sm">Upload your image — 5MB max, 2000px max</p>
 
-        <canvas data-upload-target="canvas" class="hidden w-full rounded-xl"></canvas>
+         <canvas data-upload-target="canvas"
+          data-lasso-target="canvas"
+          data-controller="lasso"
+          class="hidden w-full rounded-xl">
+         </canvas>
 
         <div data-upload-target="error" class="hidden text-red-500 text-sm"></div>
 

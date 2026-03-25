@@ -6,8 +6,10 @@ export default class extends Controller {
   connect() {}
 
   handleFile(event) {
+    console.log("HANDLE FILE CALLED")
+    if (!event.target.files) return
     const file = event.target.files[0]
-
+    if (!file) return
     if (file.size > 5 * 1024 * 1024) {
       console.error("File above the authorized size.")
       return
