@@ -27,6 +27,9 @@ export default class extends Controller {
   this.drawing = true
   this.points = []
   this.points.push({ x: event.offsetX, y: event.offsetY })
+  try {
+    this.canvasTarget.setPointerCapture(event.pointerId)
+  } catch(e) {}
  }
 
   draw(event) {
